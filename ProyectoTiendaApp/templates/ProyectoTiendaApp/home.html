@@ -1,11 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Esta es la Pagina de inicio</p>
-</body>
-</html>
+{% extends "ProyectoTiendaApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container mb-5">
+          <article class="text-center mt-5">
+            <h1>Comencemos tu nuevo proyecto</h1>
+            <p class="fs-5">Me encanta la colaboracion mutua profesional-cliente. Prefiero la frase</p>
+            <p class="fs-2"><b><i>"Trabajo con tigo"</i></b></p>
+            <p class="fs-5">En vez de <b>trabajo para ti</b></p>
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, ea similique possimus libero sunt numquam voluptates quidem perferendis tempore nemo nobis deleniti voluptatibus? Enim accusamus corrupti atque hic eligendi tempore!</p>
+            <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nemo perspiciatis in optio ut quasi id. Ducimus dolore blanditiis mollitia. Magni id mollitia, fugiat nesciunt consequuntur esse quibusdam! Esse, iure!</p>
+          </article>
+        <section class="row align-items-lg-center mt-5">
+          <article class="col-12 col-lg-6 text-lg-end">
+            <h2>¿Buscas Ropa de Calidad y con un buen estilo?</h2>
+            <p class="fs-5">Ropa StreetWear capaz de imponer estilo y moda en donde quieras que </p>
+          </article>
+          <article class="col-12 col-lg-6">
+            <img src="{% static 'ProyectoTiendaApp/img/home1.webp' %}" alt="Paso 1: Concepto y presupuesto"  class="img-fluid">
+          </article>
+        </section>
+        <section class="row align-items-lg-center mt-5 pe-3">
+          <article class="col-12 col-lg-6 order-lg-1">
+            <h2>Gran Variedad de Productos</h2>
+            <p class="fs-5">No te quedes solo con los tipicos diseños, aqui podras elegir el que mejor se acomode con tu personalidad y estilo</p>
+          </article>
+          <article class="col-12 col-lg-6">
+            <img src="{% static 'ProyectoTiendaApp/img/home2.webp' %}"" class="img-fluid">
+          </article>
+        </section>
+      </div>
+
+{% endblock %}

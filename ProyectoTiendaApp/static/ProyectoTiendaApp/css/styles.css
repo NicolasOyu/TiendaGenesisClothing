@@ -1,0 +1,45 @@
+/*Custom Properties*/
+
+:root {
+
+    --first-color: rgb(0, 0, 0);
+    --first-alpha-color: rgb(0, 0, 0.75);
+    --second-color: rgb(30, 30, 30);
+    --second-alpha-color: rgb(50, 50, 50);
+    
+    --bg-color: rgb(255, 255, 255);
+    --bg-alpha-color: rgb(255, 255, 255, 0.75);
+
+}
+
+/*Reset Styles*/
+
+body {
+
+    font-family: "PT Serif", serif;
+    color: var(--bg-color);
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;        /* No repetir la imagen */
+    background-size: cover;             /* Que cubra todo el fondo */
+    background-position: center center;
+   
+}
+
+h1{
+
+    color: var(--bg-color);
+    font-size: 75px;
+    font: bold;
+
+}
+
+/*Bootstrap Styles*/
+
+.nav-link{
+
+    font: bold;
+
+}
+
+
+/*My Styles*/
