@@ -6,10 +6,6 @@ def home(request):
 
     return render(request, "ProyectoTiendaApp/home.html")
 
-def informacion(request):
-
-    return render(request, "ProyectoTiendaApp/informacion.html")
-
 def tienda(request):
 
     return render(request, "ProyectoTiendaApp/tienda.html")
